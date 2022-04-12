@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Navbar from './components/Navbar';
 import {
@@ -9,11 +9,13 @@ import {
 } from "react-router-dom";
 import Home from './components/Home';
 import About from './components/About';
+import NoteState from './context/notes/NoteState';
 
 
 function App() {
   return (
     <>
+    <NoteState>
      <div className="App">
       <h1>iNotebook</h1>
       <Router>
@@ -26,6 +28,7 @@ function App() {
         </Routes>
       </Router>
     </div>
+    </NoteState>
     </>
   );
 }
