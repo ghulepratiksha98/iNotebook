@@ -20,12 +20,13 @@ function App() {
       <h1>iNotebook</h1>
       <Router>
         <Navbar />
-
+         <div className="container">
 
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/about" element={<About />} />
         </Routes>
+        </div>
       </Router>
     </div>
     </NoteState>
