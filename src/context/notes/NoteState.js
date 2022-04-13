@@ -5,7 +5,7 @@ import NoteContext from "./noteContext";
 const NoteState = (props)=>{
     const notesIntial = [
         {
-          "_id": "6254f08b03edd0763fe9412e",
+          "_id": "6254f08b03edd40763fe9412e",
           "user": "625407180a28792ef2e1a975",
           "title": "My Title",
           "description": "Please wake up early",
@@ -14,7 +14,7 @@ const NoteState = (props)=>{
           "__v": 0
         },
         {
-          "_id": "6254f08c03edd0763fe94130",
+          "_id": "6254f08c033ed44d0763fe94130",
           "user": "625407180a28792ef2e1a975",
           "title": "My Title",
           "description": "Please wake up early",
@@ -24,7 +24,7 @@ const NoteState = (props)=>{
         }
         ,
         {
-          "_id": "6254f08c03edd0763fe94130",
+          "_id": "6254f208c03edd0763fe94130",
           "user": "625407180a28792ef2e1a975",
           "title": "My Title",
           "description": "Please wake up early",
@@ -33,7 +33,7 @@ const NoteState = (props)=>{
           "__v": 0
         },
         {
-          "_id": "6254f08c03edd0763fe94130",
+          "_id": "6254f08c032edd0763fe94130",
           "user": "625407180a28792ef2e1a975",
           "title": "My Title",
           "description": "Please wake up early",
@@ -42,7 +42,7 @@ const NoteState = (props)=>{
           "__v": 0
         },
         {
-          "_id": "6254f08c03edd0763fe94130",
+          "_id": "6254f08c03e4dd0763fe94130",
           "user": "625407180a28792ef2e1a975",
           "title": "My Title",
           "description": "Please wake up early",

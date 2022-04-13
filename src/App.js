@@ -10,6 +10,7 @@ import {
 import Home from './components/Home';
 import About from './components/About';
 import NoteState from './context/notes/NoteState';
+import Alert from './components/Alert';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <h1>iNotebook</h1>
       <Router>
         <Navbar />
+        <Alert message= "This is amazing react course"/>
          <div className="container">
 
         <Routes>
