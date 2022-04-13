@@ -17,7 +17,7 @@ const NoteState = (props)=>{
       
       });
       const json = await response.json()
-      console.log(json)
+      // console.log(json)
       setNotes(json)
     }
       //Add Note
@@ -30,20 +30,11 @@ const NoteState = (props)=>{
             "auth-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjI1NDA3MTgwYTI4NzkyZWYyZTFhOTc1In0sImlhdCI6MTY0OTcyOTIwOX0.oCkir2YdS3ZPi7bK-HxX_HAvpVA1TlrT3nEEYYTgM7U" },
           body: JSON.stringify({title, description, tag})
         });
-       const json = await response.json();
-       console.log(json)
-
-        console.log("Adding anew note");
-        const note =  {
-          "_id": "6254f08c03e4WWFFdd0763fe94130",
-          "user": "625407ADCS180a28792ef2e1a975",
-          "title": title,
-          "description": description,
-          "tag": tag,
-          "date": "2022-04-12T03:22:52.017Z",
-          "__v": 0
-        };
+       const note = await response.json();
        setNotes(notes.concat(note))
+       
+     
+       
       }
       //Delete  Note
       const deleteNote =  async(id) =>{
@@ -56,12 +47,8 @@ const NoteState = (props)=>{
           
         });
         const json =  await response.json();
-        console.log(json)
-
-
-
-
-        console.log("deleteing the note with id" + id);
+        // console.log(json)
+        // console.log("deleteing the note with id" + id);
         const newNotes = notes.filter((note)=>{ return note._id!==id})
         setNotes(newNotes)
       }
@@ -75,7 +62,7 @@ const NoteState = (props)=>{
             "auth-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjI1NDA3MTgwYTI4NzkyZWYyZTFhOTc1In0sImlhdCI6MTY0OTcyOTIwOX0.oCkir2YdS3ZPi7bK-HxX_HAvpVA1TlrT3nEEYYTgM7U" },
           body: JSON.stringify({title, description, tag})
         });
-        const json = response.json();
+        // const json = response.json();
         let newNotes = JSON.parse(JSON.stringify(notes))
         //Logic to edit in client
        for (let index = 0; index < notes.length; index++) {
