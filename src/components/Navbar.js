@@ -10,7 +10,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
-         iNotebook
+    
         </Link>
         <button
           className="navbar-toggler"
@@ -38,6 +38,10 @@ function Navbar() {
 
 
           </ul>
+          <form className="d-flex"> 
+                    <Link className="btn btn-primary mx-1" to="/login" role="button">Login</Link>
+                    <Link className="btn btn-primary mx-1" to="/signup" role="button">Signup</Link>
+          </form>
 
         </div>
       </div>
